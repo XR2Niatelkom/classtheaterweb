@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body style="background-color: #F6D7A7;">
+    <nav class="nav-bar">
+        <div class="logo"> Contact </div>
+            <div class="burger" >
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div></div>
+        </div>
+            <ul>
+                <li><a href="index.html" class="active" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <script>
+            burger - document.querySelector('.burger');
+            burger.onclick = function(){
+                navBar = document.querySelector('.nav-bar');
+                navBar.classlist.toggle('aktive')
+            }
+        </script>
+    <div class="robo">
+     <h1>contact us</h1>
+    <a href="https://instagram.com/reliaavv?igshid=YmMyMTA2M2Y="><img src="gallery/intagram.png" width="300%"></a>
+    <a href="https://chat.whatsapp.com/IFHO2Lk9yDAANAjRHApAHQ"><img src="gallery/wa.png" width="300%"></a>
+    <a href="https://vt.tiktok.com/ZSRosPFLu/"><img src="gallery/tiktok.png" width="300%"></a>
+    </div>
+</body>
+</html>

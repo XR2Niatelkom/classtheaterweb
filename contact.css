@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family:cursive;
+  box-sizing: border-box;
+}
+
+.nav-bar{
+  width: 100%;
+  height: 70px;
+  background: #87AAAA;
+  color: #F6EABE;
+  border-bottom: 5px solid #FFEBCD;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 100px;
+  margin: 0;
+}
+
+.logo{
+  font-size: 28pt;
+  font-weight: bold;
+  color: #C8E3D4 ;
+
+}
+
+.burger{
+  display: none;
+}
+
+.nav-bar ul{
+  display: flex;
+}
+
+.nav-bar ul li a{
+  display: block;
+  color: #F6EABE;
+  font-size: 15pt;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0,2s;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: cursive;
+}
+
+.nav-bar ul li a:hover{
+  color:#F6EABE ;
+  background: white;
+}
+
+.nav-bar ul li a.active{
+  color: #F6EABE;
+  background: white;
+}
+
+@media only screen and(max-width:1320px){
+  .nav-bar{
+      padding: 0 50px;
+  }
+}
+
+@media only screen and(max-width:1100px){
+  .nav-bar{
+      padding: 0 30px;
+  }
+}
+
+@media only screen and(max-width:900px){
+  .burger{
+      display: block;
+      cursor: pointer;
+  }
+  .burger .line{
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 6px 0;
+  }
+  .nav-bar{
+      height: 0;
+      position: absolute;
+      top: 80px;
+      left:0 ;
+      right: 0;
+      width: 100vw;
+      background: black;
+      transition: 0,2s;
+  }
+  .nav-bar ul{
+      display: block;
+      width: fit-content;
+      margin: 80px auto 0 auto;
+      text-align: center;
+      transition: 0,5s;
+      opacity: 0;
+      overflow: hidden;
+  }
+  .nav-bar ul li a{
+      margin-bottom: 12px;
+  }
+}
+
+.robo img{
+  transition: 1s;
+padding: 5px;
+width: 230px;
+height: 150px;
+margin: 80px;
+filter: drop-shadow(10px 15px 5px);
+margin-left: 100;
+}
+
+
+.robo h1{
+  color: black;
+  text-align: center;
+border-bottom: 10px solid white;
+  color: white; 
+  padding: 20px;
+  font-family: cursive;
+  font-size: 40pt;
+  margin: 50px;
+  width: 350px;
+  right: 150px;
+  margin-left: 430px;
+  filter: drop-shadow(10px 15px 5px black);
+}
+
+

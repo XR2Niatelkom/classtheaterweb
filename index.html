@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Class Theater </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body style="background-color:#F6D7A7 ;">
+    <nav class="nav-bar">
+    <div class="logo"> Myclass </div>
+        <div class="burger" >
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div></div>
+    </div>
+        <ul>
+            <li><a href="index.html" class="active" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <script>
+        burger - document.querySelector('.burger');
+        burger.onclick = function(){
+            navBar = document.querySelector('.nav-bar');
+            navBar.classlist.toggle('aktive')
+        }
+    </script>
+
+        <div class="header">
+            <h1 class="Tema" style="color:white; margin-left: auto; background-color: #F6EABE;">KOMUNITAS THEATER SABDA</h1>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+        <img src="gallery/gambar1.png" height="400px" >
+    </div>
+    <!-- content end -->
+
+
+</div>
+</body>
+</html>
